@@ -1,0 +1,27 @@
+ JOB
+	List of states and transitions bewteen those states.
+	A job is a batch process that is to be executed.
+	It runs from start to end without interruption.
+	A job is restartable.
+	A job is divided into steps
+	
+Step
+
+		Tasklet
+
+		Chunk
+			is item based
+				ItemReader
+					Reads data from a source into spring batch application
+				ItemProcessor[Optional]
+						Contains processing logic for the data
+				ItemWriter
+					Writes data to a destination from spring batch application
+				
+		
+JobLauncher		
+			JobLauncher is an interface to launch Spring Batch Job
+			
+JobRepository
+			MAP
+			JDBC

@@ -22,14 +22,14 @@ public class JobConfiguration {
 	private StepBuilderFactory stepBuilderFactory;
 
 	@Bean
-	public Step step1() {
+	public Step step0() {
 		//@formatter:off
 		return stepBuilderFactory.
-				get("step1").
+				get("step0").
 				tasklet(new Tasklet() {
 					@Override
 					public RepeatStatus execute(StepContribution arg0, ChunkContext arg1) throws Exception {
-						System.out.println("Hello World , Step#1");
+						System.out.println("Hello World , Step#0");
 						return RepeatStatus.FINISHED;
 					}
 		}).build();
@@ -41,7 +41,7 @@ public class JobConfiguration {
 		//@formatter:off
 		return jobBuilderFactory.
 				get("helloWorldJob").
-				start(step1()).build();
+				start(step0()).build();
 		//@formatter:on		
 	}
 }
