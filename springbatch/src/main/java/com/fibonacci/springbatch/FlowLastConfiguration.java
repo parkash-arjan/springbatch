@@ -2,46 +2,35 @@ package com.fibonacci.springbatch;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
-import org.springframework.batch.core.StepContribution;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
-import org.springframework.batch.core.scope.context.ChunkContext;
-import org.springframework.batch.core.step.tasklet.Tasklet;
+import org.springframework.batch.core.job.flow.Flow;
 import org.springframework.batch.repeat.RepeatStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-//@Configuration
-//@EnableBatchProcessing
-public class JobConfiguration {
+@Configuration
+@EnableBatchProcessing
+public class FlowLastConfiguration {
+
 	@Autowired
 	private JobBuilderFactory jobBuilderFactory;
 	@Autowired
 	private StepBuilderFactory stepBuilderFactory;
 
-	@Bean
-	public Step step0() {
-		//@formatter:off
-		return stepBuilderFactory.
-				get("step0").
-				tasklet(new Tasklet() {
-					@Override
-					public RepeatStatus execute(StepContribution arg0, ChunkContext arg1) throws Exception {
-						System.out.println("Hello World , Step#0");
-						return RepeatStatus.FINISHED;
-					}
+	public Step localStep() {
+
+		return stepBuilderFactory.get("localStep").tasklet((stepContrbution, chunkContext) -> {
+			System.out.println("FlowLastConfiguration==> calling localStep()...");
+			return RepeatStatus.FINISHED;
 		}).build();
-		//@formatter:on
+
 	}
 
 	@Bean
-	public Job helloWorldJob() {
-		//@formatter:off
-		return jobBuilderFactory.
-				get("helloWorldJob").
-				start(step0()).build();
-		//@formatter:on		
+	public Job flowLasttJob(Flow flow) {
+		return jobBuilderFactory.get("flowLasttJob").start(localStep()).on("COMPLETED").to(flow).end().build();
 	}
 }

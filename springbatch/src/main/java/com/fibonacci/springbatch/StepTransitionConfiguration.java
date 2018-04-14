@@ -13,8 +13,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
-@EnableBatchProcessing
+//@Configuration
+//@EnableBatchProcessing
 public class StepTransitionConfiguration {
 
 	@Autowired
@@ -79,12 +79,28 @@ public class StepTransitionConfiguration {
 		//@formatter:on
 
 		//@formatter:off
+		//return jobBuilderFactory.get("transitionJobSimpleNext").					
+					//start(step1()).on("COMPLETED").to(step2()).
+					//from(step2()).on("COMPLETED").to(step3()).
+					//from(step3()).end().
+					//build();
+		//@formatter:on				
+
+		//@formatter:off
 		return jobBuilderFactory.get("transitionJobSimpleNext").					
 					start(step1()).on("COMPLETED").to(step2()).
-					from(step2()).on("COMPLETED").to(step3()).
+					from(step2()).on("COMPLETED").stopAndRestart(step3()).
 					from(step3()).end().
 					build();
-		//@formatter:on				
+		//@formatter:on			
+
+		//@formatter:off
+		//return jobBuilderFactory.get("transitionJobSimpleNext").					
+					//start(step1()).on("COMPLETED").to(step2()).
+					//from(step2()).on("COMPLETED").fail().
+					//from(step3()).end().
+					//build();
+		//@formatter:on			
 
 	}
 }
