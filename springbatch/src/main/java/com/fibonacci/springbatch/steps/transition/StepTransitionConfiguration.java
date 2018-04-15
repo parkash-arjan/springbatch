@@ -1,4 +1,4 @@
-package com.fibonacci.springbatch;
+package com.fibonacci.springbatch.steps.transition;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
@@ -14,7 +14,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 //@Configuration
-//@EnableBatchProcessing
 public class StepTransitionConfiguration {
 
 	@Autowired

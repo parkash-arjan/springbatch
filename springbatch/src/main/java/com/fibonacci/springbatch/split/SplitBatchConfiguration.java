@@ -1,4 +1,4 @@
-package com.fibonacci.springbatch;
+package com.fibonacci.springbatch.split;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobExecution;
@@ -21,7 +21,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.task.SimpleAsyncTaskExecutor;
 
 //@Configuration
-//@EnableBatchProcessing
 public class SplitBatchConfiguration {
 
 	@Autowired

@@ -1,4 +1,4 @@
-package com.fibonacci.springbatch;
+package com.fibonacci.springbatch.decider;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobExecution;
@@ -19,7 +19,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 //@Configuration
-//@EnableBatchProcessing
 public class DeciderBatchConfiguration {
 
 	@Autowired
