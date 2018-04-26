@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 public class StatelessItemReaderConfiguration {
 
 	@Autowired
@@ -22,10 +22,10 @@ public class StatelessItemReaderConfiguration {
 
 	@Bean
 	public StatelessItemReader statelessItemReader() {
-		List<String> data = new ArrayList<>(2);
-		data.add("Item#1");
-		data.add("Item#2");
-		data.add("Item#3");
+		List<String> data = new ArrayList<>();
+		for (int i = 1; i <= 10; i++) {
+			data.add("Item#" + i);
+		}
 
 		return new StatelessItemReader(data);
 	}
@@ -35,7 +35,7 @@ public class StatelessItemReaderConfiguration {
 		//@formatter:off
 		return stepBuilderFactory.
 					get("stepA")
-					.<String,String>chunk(2) //two transactions for the data???
+					.<String,String>chunk(0) //two transactions for the data???
 					.reader(statelessItemReader())
 					.writer(list->{
 						for (String string : list) {
