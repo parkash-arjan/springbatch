@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<customers>
+	<customer>
+		<id>1</id>
+		<firstName>Mufutau</firstName>
+		<lastName>Maddox</lastName>
+		<birthdate>2016-06-05 19:43:51PM</birthdate>
+	</customer>
+	<customer>
+		<id>2</id>
+		<firstName>Brenden</firstName>
+		<lastName>Cobb</lastName>
+		<birthdate>2016-01-06 13:18:17PM</birthdate>
+	</customer>
+	<customer>
+		<id>3</id>
+		<firstName>Kerry</firstName>
+		<lastName>Joseph</lastName>
+		<birthdate>2015-09-15 18:32:33PM</birthdate>
+	</customer>
+	<customer>
+		<id>4</id>
+		<firstName>Sierra</firstName>
+		<lastName>Daniels</lastName>
+		<birthdate>2016-10-08 09:41:05AM</birthdate>
+	</customer>
+	<customer>
+		<id>5</id>
+		<firstName>Gray</firstName>
+		<lastName>Mann</lastName>
+		<birthdate>2016-06-26 23:32:12PM</birthdate>
+	</customer>
+	<customer>
+		<id>6</id>
+		<firstName>Alexandra</firstName>
+		<lastName>Copeland</lastName>
+		<birthdate>2015-08-15 08:56:23AM</birthdate>
+	</customer>
+	<customer>
+		<id>7</id>
+		<firstName>Tanner</firstName>
+		<lastName>Ashley</lastName>
+		<birthdate>2016-11-11 07:32:15AM</birthdate>
+	</customer>
+	<customer>
+		<id>8</id>
+		<firstName>Fletcher</firstName>
+		<lastName>Roberts</lastName>
+		<birthdate>2016-06-16 18:10:43PM</birthdate>
+	</customer>
+	<customer>
+		<id>9</id>
+		<firstName>Kyla</firstName>
+		<lastName>Michael</lastName>
+		<birthdate>2016-12-09 11:42:05AM</birthdate>
+	</customer>
+	<customer>
+		<id>10</id>
+		<firstName>Lani</firstName>
+		<lastName>Burt</lastName>
+		<birthdate>2015-10-25 09:33:02AM</birthdate>
+	</customer>
+	<customer>
+		<id>11</id>
+		<firstName>Josephine</firstName>
+		<lastName>Morales</lastName>
+		<birthdate>2015-05-14 15:06:19PM</birthdate>
+	</customer>
+	<customer>
+		<id>12</id>
+		<firstName>Ryan</firstName>
+		<lastName>Pollard</lastName>
+		<birthdate>2015-06-23 21:45:30PM</birthdate>
+	</customer>
+	<customer>
+		<id>13</id>
+		<firstName>Barclay</firstName>
+		<lastName>Joyce</lastName>
+		<birthdate>2016-11-08 11:13:01AM</birthdate>
+	</customer>
+	<customer>
+		<id>14</id>
+		<firstName>Leigh</firstName>
+		<lastName>Miller</lastName>
+		<birthdate>2016-01-24 17:34:42PM</birthdate>
+	</customer>
+	<customer>
+		<id>15</id>
+		<firstName>Emmanuel</firstName>
+		<lastName>Swanson</lastName>
+		<birthdate>2015-04-08 16:53:06PM</birthdate>
+	</customer>
+	<customer>
+		<id>16</id>
+		<firstName>Brenna</firstName>
+		<lastName>Sargent</lastName>
+		<birthdate>2016-11-26 01:52:27AM</birthdate>
+	</customer>
+	<customer>
+		<id>17</id>
+		<firstName>Charde</firstName>
+		<lastName>Merrill</lastName>
+		<birthdate>2015-04-05 09:52:34AM</birthdate>
+	</customer>
+	<customer>
+		<id>18</id>
+		<firstName>Sasha</firstName>
+		<lastName>Ray</lastName>
+		<birthdate>2015-02-21 08:52:12AM</birthdate>
+	</customer>
+	<customer>
+		<id>19</id>
+		<firstName>John</firstName>
+		<lastName>Bishop</lastName>
+		<birthdate>2016-12-12 21:51:00PM</birthdate>
+	</customer>
+	<customer>
+		<id>20</id>
+		<firstName>Lesley</firstName>
+		<lastName>Kane</lastName>
+		<birthdate>2015-02-05 18:10:27PM</birthdate>
+	</customer>
+	<customer>
+		<id>21</id>
+		<firstName>Mara</firstName>
+		<lastName>Benton</lastName>
+		<birthdate>2015-09-26 13:18:17PM</birthdate>
+	</customer>
+	<customer>
+		<id>22</id>
+		<firstName>Alden</firstName>
+		<lastName>Lawrence</lastName>
+		<birthdate>2016-01-31 06:32:04AM</birthdate>
+	</customer>
+	<customer>
+		<id>23</id>
+		<firstName>Elliott</firstName>
+		<lastName>Wyatt</lastName>
+		<birthdate>2016-03-03 21:08:29PM</birthdate>
+	</customer>
+	<customer>
+		<id>24</id>
+		<firstName>Beck</firstName>
+		<lastName>Bartlett</lastName>
+		<birthdate>2016-01-19 19:07:46PM</birthdate>
+	</customer>
+	<customer>
+		<id>25</id>
+		<firstName>Pandora</firstName>
+		<lastName>Booth</lastName>
+		<birthdate>2016-08-04 00:31:01AM</birthdate>
+	</customer>
+	<customer>
+		<id>26</id>
+		<firstName>Casey</firstName>
+		<lastName>Mcdaniel</lastName>
+		<birthdate>2015-05-20 02:07:01AM</birthdate>
+	</customer>
+	<customer>
+		<id>27</id>
+		<firstName>Abra</firstName>
+		<lastName>Holland</lastName>
+		<birthdate>2016-07-27 00:59:56AM</birthdate>
+	</customer>
+	<customer>
+		<id>28</id>
+		<firstName>Keane</firstName>
+		<lastName>Cash</lastName>
+		<birthdate>2015-06-26 11:10:36AM</birthdate>
+	</customer>
+	<customer>
+		<id>29</id>
+		<firstName>Cain</firstName>
+		<lastName>Warner</lastName>
+		<birthdate>2016-02-07 23:06:57PM</birthdate>
+	</customer>
+	<customer>
+		<id>30</id>
+		<firstName>Athena</firstName>
+		<lastName>Le</lastName>
+		<birthdate>2015-02-03 23:03:33PM</birthdate>
+	</customer>
+	<customer>
+		<id>31</id>
+		<firstName>Roanna</firstName>
+		<lastName>Mejia</lastName>
+		<birthdate>2016-08-29 17:49:20PM</birthdate>
+	</customer>
+	<customer>
+		<id>32</id>
+		<firstName>Vielka</firstName>
+		<lastName>Charles</lastName>
+		<birthdate>2016-06-15 11:53:24AM</birthdate>
+	</customer>
+	<customer>
+		<id>33</id>
+		<firstName>Sage</firstName>
+		<lastName>Hoover</lastName>
+		<birthdate>2015-11-20 11:24:41AM</birthdate>
+	</customer>
+	<customer>
+		<id>34</id>
+		<firstName>Mark</firstName>
+		<lastName>Harding</lastName>
+		<birthdate>2016-11-17 23:26:26PM</birthdate>
+	</customer>
+	<customer>
+		<id>35</id>
+		<firstName>Doris</firstName>
+		<lastName>Wall</lastName>
+		<birthdate>2016-10-08 11:08:00AM</birthdate>
+	</customer>
+	<customer>
+		<id>36</id>
+		<firstName>Christopher</firstName>
+		<lastName>Rich</lastName>
+		<birthdate>2016-09-16 05:54:29AM</birthdate>
+	</customer>
+	<customer>
+		<id>37</id>
+		<firstName>Beatrice</firstName>
+		<lastName>Mclean</lastName>
+		<birthdate>2015-04-04 10:57:47AM</birthdate>
+	</customer>
+	<customer>
+		<id>38</id>
+		<firstName>Samson</firstName>
+		<lastName>Lowe</lastName>
+		<birthdate>2016-02-20 13:15:01PM</birthdate>
+	</customer>
+	<customer>
+		<id>39</id>
+		<firstName>Norman</firstName>
+		<lastName>Chase</lastName>
+		<birthdate>2016-11-08 05:22:58AM</birthdate>
+	</customer>
+	<customer>
+		<id>40</id>
+		<firstName>Ignatius</firstName>
+		<lastName>Holloway</lastName>
+		<birthdate>2015-07-23 05:47:52AM</birthdate>
+	</customer>
+	<customer>
+		<id>41</id>
+		<firstName>Ori</firstName>
+		<lastName>Oconnor</lastName>
+		<birthdate>2015-12-18 03:11:53AM</birthdate>
+	</customer>
+	<customer>
+		<id>42</id>
+		<firstName>Russell</firstName>
+		<lastName>Macias</lastName>
+		<birthdate>2015-02-01 09:57:58AM</birthdate>
+	</customer>
+	<customer>
+		<id>43</id>
+		<firstName>Aladdin</firstName>
+		<lastName>Riddle</lastName>
+		<birthdate>2015-08-06 10:52:05AM</birthdate>
+	</customer>
+	<customer>
+		<id>44</id>
+		<firstName>Clayton</firstName>
+		<lastName>Odom</lastName>
+		<birthdate>2014-12-25 19:19:40PM</birthdate>
+	</customer>
+	<customer>
+		<id>45</id>
+		<firstName>Pandora</firstName>
+		<lastName>Garza</lastName>
+		<birthdate>2014-12-20 09:18:26AM</birthdate>
+	</customer>
+	<customer>
+		<id>46</id>
+		<firstName>Gay</firstName>
+		<lastName>Herman</lastName>
+		<birthdate>2016-04-20 23:43:03PM</birthdate>
+	</customer>
+	<customer>
+		<id>47</id>
+		<firstName>Willow</firstName>
+		<lastName>Cardenas</lastName>
+		<birthdate>2015-12-24 10:51:22AM</birthdate>
+	</customer>
+	<customer>
+		<id>48</id>
+		<firstName>Idona</firstName>
+		<lastName>Tillman</lastName>
+		<birthdate>2016-10-21 07:44:33AM</birthdate>
+	</customer>
+	<customer>
+		<id>49</id>
+		<firstName>Indigo</firstName>
+		<lastName>Salazar</lastName>
+		<birthdate>2016-01-21 08:54:58AM</birthdate>
+	</customer>
+	<customer>
+		<id>50</id>
+		<firstName>Myra</firstName>
+		<lastName>Park</lastName>
+		<birthdate>2015-02-16 01:50:34AM</birthdate>
+	</customer>
+</customers>
