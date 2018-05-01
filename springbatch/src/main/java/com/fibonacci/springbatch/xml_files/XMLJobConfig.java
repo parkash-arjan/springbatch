@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.oxm.xstream.XStreamMarshaller;
 
-@Configuration
+//@Configuration
 public class XMLJobConfig {
 
 	@Autowired
@@ -26,9 +26,9 @@ public class XMLJobConfig {
 	public StepBuilderFactory stepBuilderFactory;
 
 	@Bean
-	public ItemWriter<Customer> itemWriter() {
-		System.out.println("***********************************************");
+	public ItemWriter<Customer> itemWriter() {		
 		return items -> {
+			System.out.println("***********************************************");
 			for (Customer item : items) {
 				System.out.println(item);
 			}
