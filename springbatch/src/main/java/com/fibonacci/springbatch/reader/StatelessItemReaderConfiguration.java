@@ -8,6 +8,7 @@ import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
+import org.springframework.batch.core.step.tasklet.TaskletStep;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -33,7 +34,7 @@ public class StatelessItemReaderConfiguration {
 	@Bean
 	public Step stepA() {
 		//@formatter:off
-		return stepBuilderFactory.
+		 TaskletStep tasklet = stepBuilderFactory.
 					get("stepA")
 					.<String,String>chunk(0) //two transactions for the data???
 					.reader(statelessItemReader())
@@ -41,9 +42,11 @@ public class StatelessItemReaderConfiguration {
 						for (String string : list) {
 							System.out.println(String.format("Data Read %s", string));
 						}
-					})
-					.build();
-		//@formatter:on					
+					})				
+					.build();		 		 
+		//@formatter:on	
+		tasklet.setAllowStartIfComplete(true);
+		return tasklet;
 	}
 
 	@Bean

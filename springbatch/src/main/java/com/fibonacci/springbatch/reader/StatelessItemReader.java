@@ -12,7 +12,7 @@ public class StatelessItemReader implements ItemReader<String> {
 
 	private final Iterator<String> data;
 
-	public StatelessItemReader(List<String> data) {
+	public StatelessItemReader(final List<String> data) {
 		this.data = data.iterator();
 		System.out.println(String.format("Value of this %s =  ", this));
 	}
@@ -20,6 +20,7 @@ public class StatelessItemReader implements ItemReader<String> {
 	@Override
 	public String read() throws Exception, UnexpectedInputException, ParseException, NonTransientResourceException {
 		if (data.hasNext()) {
+			System.out.println("Reading.....");
 			return data.next();
 		} else {
 			return null;
